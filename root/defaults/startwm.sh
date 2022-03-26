@@ -1,4 +1,6 @@
 #!/bin/bash
 /startpulse.sh &
-/usr/games/visualboyadvance-m /rom.gbc > /dev/null 2>&1
+rm -rf sandbox/ > /dev/null
+mkdir sandbox
+firejail --private=sandbox/ /usr/games/visualboyadvance-m /rom.gbc > /dev/null 2>&1
 #xterm > /dev/null 2>&1

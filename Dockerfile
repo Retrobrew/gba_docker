@@ -13,6 +13,7 @@ RUN \
   apt-get install --no-install-recommends -y \
     vbam \
     wget \
+    firejail \
     xterm && \
   echo "**** cleanup ****" && \
   apt-get autoclean && \
